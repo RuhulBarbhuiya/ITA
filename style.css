@@ -1,4 +1,4 @@
-/* Reset some default styles */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -16,13 +16,13 @@ body {
   transition: background-color 0.3s, color 0.3s;
 }
 
-/* Color variables */
+
 :root {
   --bg-color: #1e1e2f;
   --text-color: #e4e4f0;
-  --primary-color: #9f7aea; /* violet */
+  --primary-color: #9f7aea; 
   --secondary-color: #2d2d44;
-  --accent-color: #ff6b81;  /* optional pop color */
+  --accent-color: #ff6b81;  
 }
 
 .dark-mode {
@@ -30,7 +30,7 @@ body {
   --text-color: #000000;
 }
 
-/* Navbar */
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -66,7 +66,7 @@ body {
   color: var(--primary-color);
 }
 
-/* Dark mode toggle button */
+
 .toggle-btn {
   background: none;
   color: var(--text-color);
@@ -83,7 +83,7 @@ body {
   color: #000;
 }
 
-/* Header */
+
 header {
   background: var(--primary-color);
   color: #000;
@@ -91,12 +91,12 @@ header {
   text-align: center;
 }
 
-/* Typing effect */
+
 #typed-name {
   display: inline-block;
   overflow: hidden;
   white-space: nowrap;
-  border-right: 3px solid var(--text-color); /* Simulate the cursor */
+  border-right: 3px solid var(--text-color);
   width: 0;
   animation: typing 3s steps(30) 1s forwards, blink 0.75s step-end infinite;
 }
@@ -116,12 +116,12 @@ header {
   }
 }
 
-/* Main Section */
+
 main {
   padding: 2rem;
   display: grid;
   gap: 2rem;
-  margin-bottom: 5rem; /* Added margin to prevent overlap with footer */
+  margin-bottom: 5rem; 
 }
 
 section {
@@ -134,7 +134,7 @@ ul {
   list-style: none;
 }
 
-/* Footer */
+
 footer {
   position: fixed;
   bottom: 0;
@@ -148,7 +148,7 @@ footer {
   line-height: 1.5;
 }
 
-/* Project Cards */
+
 .project-card {
   margin-top: 1rem;
   padding: 1rem;
@@ -157,7 +157,7 @@ footer {
   background-color: var(--secondary-color);
 }
 
-/* Form Styles */
+
 input, textarea {
   width: 100%;
   padding: 0.8rem;
@@ -183,7 +183,7 @@ button:hover {
   background-color: var(--accent-color);
 }
 
-/* Scroll Navigation Highlight */
+
 .nav-links a.active,
 .nav-links a:hover {
   color: var(--primary-color);
