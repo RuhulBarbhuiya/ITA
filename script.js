@@ -1,9 +1,9 @@
-// Toggle Dark Mode
+
 function toggleDarkMode() {
   document.body.classList.toggle('dark-mode');
 }
 
-// Load Projects Dynamically
+
 const projects = [
   { title: "Review Web Application", description: "A review website for all movies and tv shows.", link: "#" },
   { title: "Local Loom", description: "An Ecom App for local goods in Northeast", link: "#" },
@@ -17,7 +17,7 @@ projects.forEach(p => {
   projectList.appendChild(div);
 });
 
-// Show Date/Time
+
 function updateDateTime() {
   const now = new Date();
   document.getElementById('datetime').textContent = `Current Time: ${now.toLocaleString()}`;
@@ -25,7 +25,7 @@ function updateDateTime() {
 updateDateTime();
 setInterval(updateDateTime, 60000);
 
-// Form Validation
+
 function validateForm() {
   const name = document.getElementById("name").value;
   const email = document.getElementById("email").value;
@@ -40,7 +40,7 @@ function validateForm() {
   return true;
 }
 
-// Scroll Navigation Highlight
+
 const sections = document.querySelectorAll("section, header");
 const navLinks = document.querySelectorAll(".nav-links a");
 
