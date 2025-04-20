@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Portfolio.</div>
+    <ul class="nav-links">
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="toggle-btn" onclick="toggleDarkMode()">🌓</button>
+  </nav>
+
+  <header id="home">
+    <div class="header-content">
+      <div class="intro">
+        <h1><span id="typed-name">Hello, I'm Ruhul</span></h1>
+        <p>Web Developer</p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I am a passionate web developer with a love for creating beautiful and functional websites. I'm always learning and experimenting with new technologies.</p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>Git</li>
+        <li>SQL</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div id="projectList"></div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form onsubmit="return validateForm()">
+        <input type="text" id="name" placeholder="Your Name" required /><br><br>
+        <input type="email" id="email" placeholder="Your Email" required /><br><br>
+        <textarea id="message" placeholder="Your Message" required></textarea><br><br>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p id="datetime"></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
